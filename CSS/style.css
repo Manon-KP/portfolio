@@ -1,0 +1,130 @@
+:root {
+    --color-primary: #1d1410;
+    --color-secondary: #9a928c;
+    --color-tertiary: #f3f0e7;
+    --color-quaternary: #685e4f;
+}
+
+body {
+    background-color: whitesmoke;
+    color: var(--color-primary);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+header,
+.navbar {
+    background-color: var(--color-primary)!important;
+    color: white;
+    padding: 10px 20px;
+}
+
+.navbar .nav-link,
+.navbar-brand,
+.navbar-toggler-icon {
+    color: white !important;
+}
+
+.navbar .nav-link:hover {
+    color: var(--color-secondary) !important; 
+}
+
+.navbar-toggler {
+    background-color: var(--color-primary)!important;
+    border: none;
+    padding: 8px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1.5 12.5a.5.5 0 0 1 .5-.5h12a.5.5 0 0 1 0 1h-12a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h12a.5.5 0 0 1 0 1h-12a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h12a.5.5 0 0 1 0 1h-12a.5.5 0 0 1-.5-.5z'/%3E%3C/svg%3E");
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+#titre h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color:  var(--color-primary);
+}
+.confirmation-container {
+    max-width: 600px;
+    margin: auto;
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+footer {
+    background-color: var(--color-primary) !important;
+    color: white;
+    padding: 10px 20px;
+    margin-top: auto;
+}
+
+.card {
+    background-color: var(--color-tertiary);
+    border: 1px solid var(--color-quaternary);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+    background-color: var(--color-quaternary);
+    color: white;
+}
+
+.table th {
+    background-color: var(--color-quaternary);
+    color: white;
+}
+
+.table td {
+    background-color: var(--color-tertiary);
+}
+
+.btn {
+    background-color: var(--color-quaternary);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+    background-color: var(--color-secondary);
+}
+
+.btn:active {
+    background-color: var(--color-tertiary);
+    transform: scale(0.95);
+}
+
+.btn:disabled {
+    background-color: #ccc;
+    color: #666;
+    cursor: not-allowed;
+}
+
+.modal-header {
+    background-color: var(--color-quaternary) !important;
+    color: white !important;
+}
+
+.table {
+    border: 1px solid var(--color-quaternary);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+th {
+    border: 1px solid var(--color-secondary) !important;
+}
+
+input[type="number"] {
+    border-radius: 10px;
+}
