@@ -28,16 +28,15 @@ h2 {
   color: #f9f8ff;
 }
 
-p,
-li {
-  font-size: 1.1em;
-  color: #f9f8ff;
-}
-
 header,
 footer {
   background-color: white;
   padding: 20px 50px;
+}
+
+p,
+li {
+  font-size: 1.1em;
 }
 
 .cta {

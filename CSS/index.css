@@ -25,12 +25,19 @@
   margin: auto;
 }
 
+p,
+li {
+  font-size: 1.1em;
+}
+
+
 .accueil-introduction h1 {
   margin-bottom: 15px;
 }
 
 .accueil-introduction p {
   margin-bottom: 30px;
+  color: #f9f8ff;
 }
 
 .accueil-introduction div {
@@ -79,6 +86,47 @@ input[type='submit'] {
   width: 200px;
   margin: auto;
   margin-top: 30px;
+}
+
+.carre-contenu {
+  border-right: 1px solid #8e86b5;
+  border-bottom: 1px solid #8e86b5;
+  padding: 50px;
+  width: 50%;
+  margin: auto;
+  margin-bottom: 80px;
+}
+
+.carre-contenu h2 {
+  margin-top: 30px;
+}
+
+.carre-contenu p {
+  color:black !important;
+}
+
+.carre-contenu ul {
+  margin-top: 30px;
+}
+
+.carre-contenu + div {
+  text-align: center;
+}
+
+.a-propos-main {
+  margin: auto;
+  background-color:white;
+  padding: 80px;
+}
+
+.a-propos-main h2 {
+  margin-bottom: 80px;
+}
+
+.a-propos-main h1,
+.a-propos-main h2 {
+  text-align: center;
+  padding: 80px;
 }
 
 @media screen and (max-width: 996px) {
