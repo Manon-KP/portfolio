@@ -39,3 +39,6 @@ Si vous souhaitez installer ce projet en local, vous pouvez suivre les étapes s
 
 ```bash
 git clone https://github.com/Manon-KP/site-portfolio.git
+```
+
+2. Ouvrez le fichier index.html dans votre navigateur pour voir le portfolio en action.
