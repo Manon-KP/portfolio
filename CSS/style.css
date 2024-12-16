@@ -264,6 +264,20 @@ h2 {
     }
 }
 
+#a-propos a {
+    text-decoration: none;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+#a-propos a:hover {
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+}
+
+#a-propos a:focus {
+    outline: none;
+}
+
 #competences {
     background-color: #f8f9fa;
     padding: 5vh 0;
