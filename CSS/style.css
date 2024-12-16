@@ -303,6 +303,13 @@ footer .container {
     gap: 20px; /* Espacement entre les éléments flex */
 }
 
+/* Définir la taille uniforme des icônes sociales */
+footer .lien-icone img {
+    width: 40px;  /* La largeur de l'image (ajustez selon vos besoins) */
+    height: 40px; /* La hauteur de l'image (ajustez selon vos besoins) */
+    object-fit: contain;  /* Assure que l'image garde son ratio et ne soit pas déformée */
+}
+
 
 /* Responsive design */
 @media (max-width: 768px) {
