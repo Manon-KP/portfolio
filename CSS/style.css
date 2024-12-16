@@ -1,7 +1,8 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Inclut le padding et la bordure dans la largeur totale */
+    box-sizing: border-box;
+    /* Inclut le padding et la bordure dans la largeur totale */
 }
 
 img {
@@ -9,14 +10,41 @@ img {
     height: auto;
 }
 
+/* Réduire le padding à gauche et à droite dans la barre de navigation */
+.navbar .container {
+    padding-left: 10px; /* Réduit l'espace à gauche */
+    padding-right: 10px; /* Réduit l'espace à droite */
+}
+
+/* Réduire le padding autour du logo */
+.navbar .logo img {
+    width: auto;
+    height: 50px; /* Ajustez la taille du logo si nécessaire */
+}
+
+/* Réduire l'espace entre les éléments de la navbar */
+.navbar-nav .nav-item {
+    margin-left: 15px; /* Ajuste l'espacement entre les liens */
+    margin-right: 15px; /* Ajuste l'espacement entre les liens */
+}
+
+/* Ajuster la taille de la navbar sur les petits écrans */
+.navbar-expand-lg .navbar-collapse {
+    padding-left: 0;
+    padding-right: 0;
+}
+
 .modal img {
     width: 100%;
     max-height: 400px;
     object-fit: contain;
     margin-bottom: 20px;
-    border: 1px solid #ddd; /* Facultatif : bordure fine */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Facultatif : ombrage */
-    border-radius: 8px; /* Facultatif : coins arrondis */
+    border: 1px solid #ddd;
+    /* Facultatif : bordure fine */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Facultatif : ombrage */
+    border-radius: 8px;
+    /* Facultatif : coins arrondis */
 }
 
 
@@ -64,39 +92,105 @@ h2 {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1; /* L'image reste derrière le texte */
+    z-index: -1;
+    /* L'image reste derrière le texte */
 }
 
 .hero-content {
     position: relative;
-    z-index: 2; /* Le texte reste au-dessus de l'image */
+    z-index: 2;
+    /* Le texte reste au-dessus de l'image */
+}
+/* Appliquer l'animation de saisie pour le titre */
+#typed-text {
+    display: inline-block;
+    padding-right: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0; /* Commence avec une largeur de 0 pour masquer tout le texte */
+    animation: typing-title 3s steps(20) 1s 1 normal both, blink 0.75s step-end infinite;
+    animation-fill-mode: forwards; /* Garde la largeur finale du texte après l'animation */
+}
+
+/* Appliquer l'animation de saisie pour la description */
+#typed-description {
+    display: inline-block;
+    padding-right: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0; /* Commence avec une largeur de 0 pour masquer tout le texte */
+    animation: typing-description 3s steps(50) 4s 1 normal both, blink 0.75s step-end infinite;
+    animation-fill-mode: forwards; /* Garde la largeur finale du texte après l'animation */
+}
+
+/* Animation pour taper le texte du titre */
+@keyframes typing-title {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%; /* Étendre la largeur jusqu'à 100% pour afficher tout le texte */
+    }
+}
+
+/* Animation pour taper le texte de la description */
+@keyframes typing-description {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%; /* Étendre la largeur jusqu'à 100% pour afficher tout le texte */
+    }
+}
+
+/* Animation pour faire clignoter le curseur */
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+/* Retirer le curseur après que le texte a été entièrement écrit */
+#typed-text, #typed-description {
+    animation: typing-title 3s steps(20) 1s 1 normal both, blink 0.75s step-end infinite, remove-blink 0.1s forwards;
+    animation-delay: 3s;
+}
+
+@keyframes remove-blink {
+    100% {
+        border-color: transparent; /* Cache le curseur */
+    }
 }
 
 .btn {
     border-radius: 30px;
-    padding: 12px 30px; 
-    font-size: 18px; 
+    padding: 12px 30px;
+    font-size: 18px;
     background-color: #0071e3;
     border: none;
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Effet au survol */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    /* Effet au survol */
 }
 
 .btn:hover {
-    background-color: #005bb5; 
-    transform: scale(1.05); /* Légère augmentation de la taille au survol */
+    background-color: #005bb5;
+    transform: scale(1.05);
+    /* Légère augmentation de la taille au survol */
 }
 
 /* Section À propos */
 #a-propos {
     position: relative;
-    padding: 5vh 5vw; /* Ajoute de l'espace interne harmonieux */
+    padding: 5vh 5vw;
+    /* Ajoute de l'espace interne harmonieux */
     width: 100% !important;
     box-sizing: border-box;
 }
 
 
 #a-propos .a-propos-content {
-    margin: 0 auto; /* Centrer le contenu de la grille */
+    margin: 0 auto;
+    /* Centrer le contenu de la grille */
 }
 
 .a-propos-photo {
@@ -105,11 +199,13 @@ h2 {
 }
 
 .a-propos-photo:hover {
-    transform: scale(1.05); /* Zoom subtil au survol */
+    transform: scale(1.05);
+    /* Zoom subtil au survol */
 }
 
 .a-propos-text {
-    font-size: 1rem; /* Texte légèrement réduit */
+    font-size: 1rem;
+    /* Texte légèrement réduit */
 
 }
 
@@ -118,6 +214,7 @@ h2 {
         opacity: 0;
         transform: translateY(-20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -129,6 +226,7 @@ h2 {
         opacity: 0;
         transform: translateY(50px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -137,16 +235,18 @@ h2 {
 
 @media (max-width: 768px) {
     .a-propos-content {
-        flex-direction: column; /* La photo passe au-dessus du texte */
+        flex-direction: column;
+        /* La photo passe au-dessus du texte */
         text-align: center;
     }
 
     .a-propos-photo {
-        width: 200px; /* Image plus petite sur les écrans étroits */
+        width: 200px;
+        /* Image plus petite sur les écrans étroits */
     }
 
     .a-propos-text {
-        font-size: 0.85rem; 
+        font-size: 0.85rem;
     }
 }
 
@@ -164,22 +264,36 @@ h2 {
     }
 }
 
+#competences {
+    background-color: #f8f9fa;
+    padding: 5vh 0;
+}
 
 /*Projets*/
 .section-title {
     margin-top: 50px;
     margin-bottom: 30px;
 }
+
 .project-card {
     cursor: pointer;
+    margin-bottom: 20px;
 }
+
 .modal-body img {
     width: 100%;
 }
 
-#competences {
-    background-color: #f8f9fa;
-    padding: 5vh 0;
+.row > .col-md-4 {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.project-card img {
+    width: 100%; /* Assure que l'image prend toute la largeur de son conteneur */
+    height: 250px; /* Définir une hauteur fixe pour toutes les images */
+    object-fit: cover; /* Couper l'image si nécessaire pour qu'elle remplisse l'espace sans déformation */
+    border-radius: 8px; /* Facultatif : ajouter des coins arrondis à l'image */
 }
 
 .card {
@@ -190,7 +304,8 @@ h2 {
 }
 
 .card:hover {
-    transform: translateY(-10px); /* Soulèvement */
+    transform: translateY(-10px);
+    /* Soulèvement */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
@@ -199,17 +314,22 @@ h2 {
 }
 
 .card-body:hover {
-    background-color: #e9ecef; /* Couleur au survol */
+    background-color: #e9ecef;
+    /* Couleur au survol */
 }
 
 .card .fa {
-    animation: bounce 2s infinite; /* Effet de rebond */
+    animation: bounce 2s infinite;
+    /* Effet de rebond */
 }
 
 @keyframes bounce {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translateY(0);
     }
+
     50% {
         transform: translateY(-10px);
     }
@@ -217,12 +337,14 @@ h2 {
 
 
 header {
-    background-color: #212529; 
-    position: fixed; /* Fixe le header en haut */
+    background-color: #212529;
+    position: fixed;
+    /* Fixe le header en haut */
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000; /* S'assure que le header est au-dessus des autres éléments */
+    z-index: 1000;
+    /* S'assure que le header est au-dessus des autres éléments */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -237,15 +359,18 @@ nav {
 .logo img {
     width: 50px;
     height: auto;
-    transition: transform 0.3s ease; /* Effet de zoom sur le logo */
+    transition: transform 0.3s ease;
+    /* Effet de zoom sur le logo */
 }
 
 .logo img:hover {
-    transform: scale(1.1); /* Zoom sur le logo */
+    transform: scale(1.1);
+    /* Zoom sur le logo */
 }
 
 .nav-links {
-    display: flex; /* Utilisation de flex pour afficher les liens horizontalement */
+    display: flex;
+    /* Utilisation de flex pour afficher les liens horizontalement */
     gap: 30px;
 }
 
@@ -259,7 +384,8 @@ nav {
 
 .nav-link:hover {
     color: #007bff;
-    border-bottom: 2px solid #007bff; /* Ligne sous le lien */
+    border-bottom: 2px solid #007bff;
+    /* Ligne sous le lien */
 }
 
 .nav-link:focus {
@@ -290,7 +416,7 @@ footer .social-icons img:hover {
 }
 
 footer p {
-    font-size: 0.9rem; 
+    font-size: 0.9rem;
     margin: 0;
 }
 
@@ -300,21 +426,25 @@ footer .container {
 
 /* Définir la taille uniforme des icônes sociales */
 footer .lien-icone img {
-    width: 40px;  
+    width: 40px;
     height: 40px;
-    object-fit: contain;  /* Assure que l'image garde son ratio et ne soit pas déformée */
+    object-fit: contain;
+    /* Assure que l'image garde son ratio et ne soit pas déformée */
 }
 
 
 /* Responsive design */
 @media (max-width: 768px) {
     nav {
-        flex-direction: column; /* Passage à une disposition verticale sur petit écran */
-        align-items: center; /* Centrer les éléments */
+        flex-direction: column;
+        /* Passage à une disposition verticale sur petit écran */
+        align-items: center;
+        /* Centrer les éléments */
     }
 
     .nav-links {
-        flex-direction: column; /* Les liens deviennent verticaux sur petit écran */
+        flex-direction: column;
+        /* Les liens deviennent verticaux sur petit écran */
         gap: 20px;
         align-items: center;
     }
@@ -324,7 +454,8 @@ footer .lien-icone img {
     }
 
     .logo img {
-        width: 40px; /* Réduction du logo sur mobile */
+        width: 40px;
+        /* Réduction du logo sur mobile */
     }
 
 }
