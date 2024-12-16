@@ -1,111 +1,328 @@
 * {
-  margin: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Inclut le padding et la bordure dans la largeur totale */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+:root {
+    --primary-color: #0071e3;
+    --secondary-color: #6c757d;
+    --background-light: #f8f9fa;
+    --text-dark: #343a40;
 }
 
 body {
-  font-family: 'Manrope', sans-serif;
-  font-size: 1em;
-  background-color: #1f2039;
-}
-
-a {
-  color: #242424;
-  text-decoration: none;
-}
-
-em {
-  color: #a5b4fc;
-  font-style: normal;
-}
-
-h1 {
-  font-size: 3.5em;
-  color: #a5b4fc;
-  font-family: 'Montserrat', sans-serif;
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background-light);
+    color: var(--text-dark);
 }
 
 h2 {
-  color: #f9f8ff;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--primary-color); /* Couleur d'accentuation */
+    text-transform: uppercase;
+    margin-bottom: 2rem;
 }
 
-header,
-footer {
-  background-color: white;
-  padding: 20px 50px;
+.bg-primary {
+    background-color: var(--primary-color) !important;
 }
 
-p,
-li {
-  font-size: 1.1em;
+.text-primary {
+    color: var(--primary-color) !important;
 }
 
-.cta {
-  display: inline-block;
-  background: linear-gradient(#8e86b5, #acaeed);
-  color: white;
-  border-radius: 50px;
-  padding: 20px 30px;
+/*Hero*/
+.hero {
+    position: relative;
+    height: 100vh;
+    color: white;
+    text-align: center;
+    overflow: hidden;
 }
 
-a:hover {
-  text-decoration: underline;
+.hero .hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* L'image reste derrière le texte */
 }
 
-.cta:hover {
-  background: linear-gradient(#696484, #8788ba);
-  text-decoration: none;
+.hero-content {
+    position: relative;
+    z-index: 2; /* Le texte reste au-dessus de l'image */
 }
 
-.lien-icone {
-  margin-left: 30px;
+.hero .btn {
+    border-radius: 30px; /* Coins très arrondis */
+    padding: 12px 30px; /* Ajuste la taille du bouton */
+    font-size: 18px; /* Augmente la taille de la police */
+    background-color: #0071e3; /* Bleu doux, similaire à celui utilisé par Apple */
+    border: none; /* Enlève la bordure par défaut */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Effet au survol */
 }
 
-.lien-icone:hover {
-  opacity: 0.5;
+.hero .btn:hover {
+    background-color: #005bb5; /* Couleur de survol (un bleu plus foncé) */
+    transform: scale(1.05); /* Légère augmentation de la taille au survol */
 }
 
-section {
-  padding: 80px;
+#competences .btn {
+    border-radius: 30px; /* Coins très arrondis */
+    padding: 12px 30px; /* Ajuste la taille du bouton */
+    font-size: 18px; /* Augmente la taille de la police */
+    background-color: #0071e3; /* Bleu doux, similaire à celui utilisé par Apple */
+    border: none; /* Enlève la bordure par défaut */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Effet au survol */
 }
 
-footer,
+#competences .btn:hover {
+    background-color: #005bb5; /* Couleur de survol (un bleu plus foncé) */
+    transform: scale(1.05); /* Légère augmentation de la taille au survol */
+}
+
+/* Section À propos */
+#a-propos {
+    position: relative;
+    padding: 5vh 5vw; /* Ajoute de l'espace interne harmonieux */
+    width: 100% !important;
+    box-sizing: border-box;
+}
+
+
+#a-propos .a-propos-content {
+    margin: 0 auto; /* Centrer le contenu de la grille */
+}
+
+
+
+.a-propos-photo {
+    border-radius: 50%; /* Cercle parfait */
+    transition: transform 0.3s ease;
+}
+
+.a-propos-photo:hover {
+    transform: scale(1.05); /* Zoom subtil au survol */
+}
+
+.a-propos-text {
+    font-size: 1rem; /* Texte légèrement réduit */
+
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .a-propos-content {
+        flex-direction: column; /* La photo passe au-dessus du texte */
+        text-align: center;
+    }
+
+    .a-propos-photo {
+        width: 200px; /* Image plus petite sur les écrans étroits */
+    }
+
+    .a-propos-text {
+        font-size: 0.85rem; /* Texte encore légèrement réduit sur mobile */
+    }
+}
+
+@media (min-width: 1200px) {
+    #a-propos {
+        padding: 10vh 10vw; /* Espacement plus large sur écrans larges */
+    }
+
+    .a-propos-photo {
+        width: 300px; /* Image plus grande sur grand écran */
+    }
+
+    .a-propos-text {
+        font-size: 1.3rem; /* Texte légèrement agrandi pour les écrans larges */
+    }
+}
+
+
+/*Projets*/
+.section-title {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.project-card {
+    cursor: pointer;
+}
+.modal-body img {
+    width: 100%;
+}
+
+#competences {
+    background-color: #f8f9fa;
+    padding: 5vh 0;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Soulèvement */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+    transition: background-color 0.3s ease;
+}
+
+.card-body:hover {
+    background-color: #e9ecef; /* Couleur au survol */
+}
+
+.card .fa {
+    animation: bounce 2s infinite; /* Effet de rebond */
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+
+header {
+    background-color: #212529; /* Gris foncé */
+    position: fixed; /* Fixe le header en haut */
+    top: 0;
+    left: 0;
+    width: 100%; /* Prend toute la largeur de l'écran */
+    z-index: 1000; /* S'assure que le header est au-dessus des autres éléments */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optionnel : ajout d'une ombre sous le header */
+}
+
+
+/* Global styles pour le header */
 nav {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between; /* Espace entre le logo et les liens */
+    align-items: center; /* Alignement vertical */
 }
 
-nav a {
-  margin-left: 30px;
+.logo img {
+    width: 50px;
+    height: auto;
+    transition: transform 0.3s ease; /* Effet de zoom sur le logo */
 }
 
-@media screen and (max-width: 996px) {
-  header nav {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
+.logo img:hover {
+    transform: scale(1.1); /* Zoom sur le logo */
+}
 
-  header nav img {
-    margin-bottom: 20px;
-  }
+.nav-links {
+    display: flex; /* Utilisation de flex pour afficher les liens horizontalement */
+    gap: 30px; /* Espacement entre les liens */
+}
 
-  header,
-  footer {
-    padding: 20px 20px;
-  }
+.nav-link {
+    font-size: 1.1em;
+    text-transform: uppercase;
+    color: #f8f9fa;
+    text-decoration: none;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
 
-  h1 {
-    font-size: 2em;
-  }
+.nav-link:hover {
+    color: #007bff; /* Changement de couleur au survol */
+    border-bottom: 2px solid #007bff; /* Ligne sous le lien */
+}
 
-  section {
-    padding: 50px 20px 50px 20px;
-  }
+.nav-link:focus {
+    outline: none;
+}
 
-  nav a {
-    margin-left: 10px;
-    margin-right: 10px;
-  }
+/* Section titre */
+.section-title {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.project-card {
+    cursor: pointer;
+}
+
+.modal-body img {
+    width: 100%;
+}
+
+/*footer*/
+footer .social-icons img {
+    transition: transform 0.3s ease; /* Effet de zoom sur les icônes */
+}
+
+footer .social-icons img:hover {
+    transform: scale(1.1);
+}
+
+footer p {
+    font-size: 0.9rem; /* Taille légèrement réduite du texte */
+    margin: 0;
+}
+
+footer .container {
+    gap: 20px; /* Espacement entre les éléments flex */
+}
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column; /* Passage à une disposition verticale sur petit écran */
+        align-items: center; /* Centrer les éléments */
+    }
+
+    .nav-links {
+        flex-direction: column; /* Les liens deviennent verticaux sur petit écran */
+        gap: 20px;
+        align-items: center;
+    }
+
+    .logo {
+        margin: 20px;
+    }
+
+    .logo img {
+        width: 40px; /* Réduction du logo sur mobile */
+    }
+
 }

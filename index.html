@@ -1,192 +1,228 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Manon Klein-Pol</title>
+    <link rel="icon" href="images/logo_light.png" type="image/png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="CSS/monstyle.css" rel="stylesheet" />
+    <link href="CSS/style.css" rel="stylesheet" />
 </head>
+
 <body>
 
     <!-- En-tête -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-        <a href="index.html" class="logo">
-            <img src="images/logo_dark.png" alt="Logo Manon Klein-Pol" />
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#a-propos">À propos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#competences">Compétences</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#projets">Projets</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a href="#hero" class="logo">
+                    <img src="images/logo_dark.png" alt="Logo Manon Klein-Pol" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#a-propos">À propos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#competences">Compétences</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projets">Projets</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 
     <section id="hero" class="hero d-flex align-items-center justify-content-center text-center">
         <div class="hero-content">
             <h1 class="mb-3">Manon Klein-Pol</h1>
-            <p class="lead">Informaticienne passionée spécialisée en développement d’applications</p>
+            <p class="lead">Informaticienne spécialisée en développement d’applications</p>
             <a href="#projets" class="btn btn-primary btn-lg">Découvrir mes projets</a>
         </div>
         <img src="images/fond-ordinateur.png" alt="Fond d'ordinateur" class="hero-image" />
     </section>
-    
-    
-
 
     <!-- Section À propos -->
-<section id="a-propos" class="container py-5">
-    <h2 class="section-title text-center mb-5">À propos</h2>
-    <div class="row d-flex justify-content-center align-items-center">
-        <div class="col-md-6 text-center">
-            <img src="images/manon_klein-pol_photo.jpg" alt="photo de Manon Klein-Pol" class="img-fluid rounded-circle" style="width: 250px;">
+    <section id="a-propos" class="container fluid py-5">
+        <h2 class="section-title text-center mb-5">À propos</h2>
+        <div class="row d-flex justify-content-center align-items-center a-propos-content">
+            <div class="col-md-4 text-center">
+                <img src="images/manon_klein-pol_photo.jpg" alt="photo de Manon Klein-Pol"
+                    class="img-fluid rounded-circle mb-4 a-propos-photo">
+            </div>
+            <div class="col-md-8">
+                <h3 class="text-center mb-4">Qui suis-je ?</h3>
+                <p class="text-center mb-4 a-propos-text">
+                    Future diplômée de BUT Informatique,
+                    passionnée par le numérique, je suis à la recherche d'un stage en développement d’applications de 10
+                    semaines, du 7 avril au 13 juin 2025.
+                </p>
+            </div>
         </div>
-        <div class="col-md-6">
-            <h3 class="text-center">Qui suis-je ?</h3>
-            <p class="text-center">
-                Future diplômée de BUT Informatique, 
-                passionnée par le numérique, 
-                je recherche un stage en développement d’applications de 10 semaines du 7 avril au 13 juin 2025.
-            </p>
-        </div>
-    </div>
-</section>
-
+    </section>
 
     <!-- Section Mes compétences -->
-<section id="competences" class="bg-light py-5">
-    <div class="container">
-        <h2 class="section-title text-center mb-5">Mes compétences</h2>
-        <div class="row">
-            <!-- Développement Web -->
-            <div class="col-md-6 col-lg-3 mb-4">
-                <div class="card shadow-sm border-0">
-                    <div class="card-body text-center">
-                        <i class="fas fa-laptop-code fa-3x mb-3" style="color: #4caf50"></i>
-                        <h4 class="card-title">Développement Web</h4>
-                        <ul class="list-unstyled">
-                            <li><strong>HTML5, CSS3, JavaScript</strong> : Création de sites web interactifs.</li>
-                            <li><strong>Frameworks</strong> : Bootstrap, Twig pour un développement rapide.</li>
-                            <li><strong>PHP, Node.js</strong> : Développement côté serveur.</li>
-                        </ul>
+    <section id="competences" class="bg-light py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Mes compétences</h2>
+            <div class="row">
+                <!-- Développement Web -->
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card shadow-sm border-0">
+                        <div class="card-body text-center">
+                            <i class="fas fa-laptop-code fa-3x mb-3" style="color: #4caf50"></i>
+                            <h4 class="card-title">Développement Web</h4>
+                            <ul class="list-unstyled">
+                                <li><strong>HTML5, CSS3, JavaScript</strong> : Création de sites web interactifs.</li>
+                                <li><strong>Frameworks</strong> : Bootstrap, Twig pour un développement rapide.</li>
+                                <li><strong>PHP, Node.js</strong> : Développement côté serveur.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Développement d'Applications -->
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card shadow-sm border-0">
+                        <div class="card-body text-center">
+                            <i class="fas fa-code fa-3x mb-3" style="color: #2196f3;"></i>
+                            <h4 class="card-title">Développement d'Applications</h4>
+                            <ul class="list-unstyled">
+                                <li><strong>C++, C</strong> : Développement d'applications desktop.</li>
+                                <li><strong>Python, Java</strong> : Applications mobiles et scientifiques.</li>
+                                <li><strong>Outils</strong> : VS Code, IntelliJ, CLion.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Base de données -->
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card shadow-sm border-0">
+                        <div class="card-body text-center">
+                            <i class="fas fa-database fa-3x mb-3" style="color: #ff9800;"></i>
+                            <h4 class="card-title">Base de données</h4>
+                            <ul class="list-unstyled">
+                                <li><strong>PL/SQL, MySQL</strong> : Conception et gestion des bases de données.</li>
+                                <li><strong>VBA Access</strong> : Automatisation des processus de données.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Génie logiciel -->
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card shadow-sm border-0">
+                        <div class="card-body text-center">
+                            <i class="fas fa-cogs fa-3x mb-3" style="color: #9c27b0;"></i>
+                            <h4 class="card-title">Génie logiciel</h4>
+                            <ul class="list-unstyled">
+                                <li><strong>Agile/SCRUM</strong> : Méthodologie de gestion de projet.</li>
+                                <li><strong>UML</strong> : Modélisation des systèmes.</li>
+                                <li><strong>MERISE</strong> : Conception de bases de données.</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Développement d'Applications -->
-            <div class="col-md-6 col-lg-3 mb-4">
-                <div class="card shadow-sm border-0">
-                    <div class="card-body text-center">
-                        <i class="fas fa-code fa-3x mb-3" style="color: #2196f3;"></i>
-                        <h4 class="card-title">Développement d'Applications</h4>
-                        <ul class="list-unstyled">
-                            <li><strong>C++, C</strong> : Développement d'applications desktop.</li>
-                            <li><strong>Python, Java</strong> : Applications mobiles et scientifiques.</li>
-                            <li><strong>Outils</strong> : VS Code, IntelliJ, CLion.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Base de données -->
-            <div class="col-md-6 col-lg-3 mb-4">
-                <div class="card shadow-sm border-0">
-                    <div class="card-body text-center">
-                        <i class="fas fa-database fa-3x mb-3" style="color: #ff9800;"></i>
-                        <h4 class="card-title">Base de données</h4>
-                        <ul class="list-unstyled">
-                            <li><strong>PL/SQL, MySQL</strong> : Conception et gestion des bases de données.</li>
-                            <li><strong>VBA Access</strong> : Automatisation des processus de données.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Génie logiciel -->
-            <div class="col-md-6 col-lg-3 mb-4">
-                <div class="card shadow-sm border-0">
-                    <div class="card-body text-center">
-                        <i class="fas fa-cogs fa-3x mb-3" style="color: #9c27b0;"></i>
-                        <h4 class="card-title">Génie logiciel</h4>
-                        <ul class="list-unstyled">
-                            <li><strong>Agile/SCRUM</strong> : Méthodologie de gestion de projet.</li>
-                            <li><strong>UML</strong> : Modélisation des systèmes.</li>
-                            <li><strong>MERISE</strong> : Conception de bases de données.</li>
-                        </ul>
-                    </div>
-                </div>
+            <!-- Bouton Télécharger CV -->
+            <div class="text-center mt-4">
+                <a href="docs/CV_Manon_Klein-Pol.pdf" class="btn btn-primary btn-lg" download="CV_Manon_Klein-Pol.pdf">
+                    <i class="fas fa-download me-2"></i>Télécharger Mon CV
+                </a>
             </div>
         </div>
-    </div>
-</section>
-
-
+    </section>
 
     <!-- Section Mes Projets -->
-    <section id="projets" class="container py-5">
-        <h2 class="section-title text-center">Mes projets</h2>
+    <section id="projets" class="container-fluid py-5">
+        <h2 class="section-title text-center">Mes Projets</h2>
         <div class="row">
             <!-- Projet 1 -->
             <div class="col-md-4">
                 <div class="card project-card" data-bs-toggle="modal" data-bs-target="#project1Modal">
-                    <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Projet 1">
+                    <img src="images/fitpulse.png" class="card-img-top" alt="FitPulse" style="width:3500px">
                     <div class="card-body">
-                        <h5 class="card-title">Application Web de Gestion de Tâches</h5>
-                        <p class="card-text">Une application web permettant de gérer des tâches avec une interface intuitive.</p>
+                        <h5 class="card-title">FitPulse</h5>
+                        <p class="card-text">Application web responsive pour le sport et le bien-être, connectant
+                            utilisateurs et coachs sportifs.</p>
                     </div>
                 </div>
             </div>
             <!-- Projet 2 -->
             <div class="col-md-4">
                 <div class="card project-card" data-bs-toggle="modal" data-bs-target="#project2Modal">
-                    <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Projet 2">
+                    <img src="images/reseau.png" class="card-img-top" alt="Réseau Linux" style="width:3500px">
                     <div class="card-body">
-                        <h5 class="card-title">Application Mobile de Recettes</h5>
-                        <p class="card-text">Application mobile permettant de rechercher et de sauvegarder des recettes de cuisine.</p>
+                        <h5 class="card-title">Configuration Réseau Linux</h5>
+                        <p class="card-text">Configuration et routage réseau dans un environnement Linux avec services
+                            comme DHCP et FTP.</p>
                     </div>
                 </div>
             </div>
             <!-- Projet 3 -->
             <div class="col-md-4">
                 <div class="card project-card" data-bs-toggle="modal" data-bs-target="#project3Modal">
-                    <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Projet 3">
+                    <img src="images/spellwar.png" class="card-img-top" alt="Spellwar" style="width:3500px">
                     <div class="card-body">
-                        <h5 class="card-title">Site Web de E-Commerce</h5>
-                        <p class="card-text">Un site web de commerce en ligne avec gestion des produits et des utilisateurs.</p>
+                        <h5 class="card-title">Spellwar : Jeu en C++</h5>
+                        <p class="card-text">Jeu d'arcade où un magicien affronte des créatures malveillantes dans une
+                            arène dynamique.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Projet 4 -->
+            <div class="col-md-4">
+                <div class="card project-card" data-bs-toggle="modal" data-bs-target="#project4Modal">
+                    <img src="images/CaptureOpenStreetMap2024-recherche-chemin.PNG" class="card-img-top"
+                        alt="Chemin Optimal" style="width:3500px">
+                    <div class="card-body">
+                        <h5 class="card-title">Recherche de Chemin Optimal en Python</h5>
+                        <p class="card-text">Implémentation graphique pour trouver le chemin le plus court dans un
+                            réseau de points.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Fenêtres Modales pour les Projets -->
+    <!-- Modales -->
     <!-- Modal Projet 1 -->
     <div class="modal fade" id="project1Modal" tabindex="-1" aria-labelledby="project1ModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="project1ModalLabel">Application Web de Gestion de Tâches</h5>
+                    <h5 class="modal-title" id="project1ModalLabel">FitPulse</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <img src="https://via.placeholder.com/700x400" alt="Projet 1 Image">
-                    <p>Description détaillée du projet...</p>
+                    <img src="images/fitpulse.png" alt="FitPulse" class="mb-3" style="width:700px">
+                    <p><strong>Description :</strong> FitPulse est une application web qui met en relation des coachs
+                        sportifs professionnels avec des utilisateurs souhaitant pratiquer une activité physique. Elle
+                        offre des fonctionnalités de réservation de séances en visioconférence ou en présentiel,
+                        adaptées aux besoins de chaque utilisateur.</p>
+                    <p><strong>Fonctionnalités principales :</strong></p>
                     <ul>
-                        <li>Technologies utilisées : React, Node.js, MongoDB</li>
-                        <li>Fonctionnalités : Création de tâches, suppression, mise à jour...</li>
+                        <li>Réservation et gestion des séances (individuelles ou collectives).</li>
+                        <li>Géolocalisation pour trouver des coachs proches.</li>
+                        <li>Interface utilisateur intuitive et responsive.</li>
+                        <li>Système de paiement en ligne sécurisé.</li>
                     </ul>
+                    <p><strong>Défis rencontrés :</strong></p>
+                    <ul>
+                        <li>Intégration de paiements en ligne sécurisés.</li>
+                        <li>Optimisation pour les appareils mobiles et tablettes.</li>
+                    </ul>
+                    <p><strong>Technologies utilisées :</strong> HTML, CSS, JavaScript, MySQL.</p>
+                    <p><strong>Résultat :</strong> Une application fonctionnelle et responsive, avec des coachs
+                        qualifiés et un suivi des séances utilisateur.</p>
                 </div>
             </div>
         </div>
@@ -197,16 +233,28 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="project2ModalLabel">Application Mobile de Recettes</h5>
+                    <h5 class="modal-title" id="project2ModalLabel">Configuration Réseau Linux</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <img src="https://via.placeholder.com/700x400" alt="Projet 2 Image">
-                    <p>Description détaillée du projet...</p>
+                    <img src="images/reseau.png" alt="Réseau Linux" class="mb-3" style="width:700px">
+                    <p><strong>Description :</strong> Ce projet consistait à configurer un réseau informatique sous
+                        Linux en utilisant des services réseau comme DHCP et FTP pour gérer les connexions et l'échange
+                        de fichiers.</p>
+                    <p><strong>Fonctionnalités principales :</strong></p>
                     <ul>
-                        <li>Technologies utilisées : Flutter, Firebase</li>
-                        <li>Fonctionnalités : Recherche de recettes, ajout à la liste de favoris...</li>
+                        <li>Configuration des routeurs et machines avec des IP fixes.</li>
+                        <li>Mise en place et test d’un serveur DHCP pour la distribution automatique d'adresses IP.</li>
+                        <li>Installation d’un serveur FTP sécurisé.</li>
                     </ul>
+                    <p><strong>Défis rencontrés :</strong></p>
+                    <ul>
+                        <li>Comprendre et appliquer les règles de routage sur plusieurs sous-réseaux.</li>
+                        <li>Configurer un service FTP sécurisé pour les utilisateurs anonymes.</li>
+                    </ul>
+                    <p><strong>Technologies utilisées :</strong> Bash, Linux (Debian), DHCP, FTP.</p>
+                    <p><strong>Résultat :</strong> Un réseau stable et fonctionnel capable de distribuer automatiquement
+                        des adresses IP et d'offrir des services de transfert de fichiers.</p>
                 </div>
             </div>
         </div>
@@ -217,44 +265,90 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="project3ModalLabel">Site Web de E-Commerce</h5>
+                    <h5 class="modal-title" id="project3ModalLabel">Spellwar : Jeu en C++</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <img src="https://via.placeholder.com/700x400" alt="Projet 3 Image">
-                    <p>Description détaillée du projet...</p>
+                    <img src="images/spellwar.png" alt="Spellwar" class="mb-3" style="width:700px">
+                    <p><strong>Description :</strong> Spellwar est un jeu d'arcade développé en C++ où le joueur incarne
+                        un magicien luttant contre des créatures malveillantes dans une arène dynamique.</p>
+                    <p><strong>Fonctionnalités principales :</strong></p>
                     <ul>
-                        <li>Technologies utilisées : HTML, CSS, JavaScript, PHP</li>
-                        <li>Fonctionnalités : Gestion des produits, panier, paiement en ligne...</li>
+                        <li>Système de déplacement du joueur et des adversaires.</li>
+                        <li>Gestion des collisions (flammes, éclairs, adversaires).</li>
+                        <li>Interface simple avec score et fin de partie.</li>
                     </ul>
+                    <p><strong>Défis rencontrés :</strong></p>
+                    <ul>
+                        <li>Optimisation des performances pour le traitement des déplacements.</li>
+                        <li>Gestion des interactions entre les différents éléments du jeu.</li>
+                    </ul>
+                    <p><strong>Technologies utilisées :</strong> C++, SDL.</p>
+                    <p><strong>Résultat :</strong> Un jeu interactif et amusant qui met en avant les compétences en
+                        programmation algorithmique et graphique.</p>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Pied de page -->
-<!-- Pied de page -->
-<footer class="bg-dark text-white py-4">
-    <div class="container d-flex justify-content-between align-items-center flex-wrap">
-        <!-- Logo et Copyright -->
-        <div class="d-flex align-items-center">
-            <a href="index.html" class="lien-icone me-2">
-                <img src="images/logo_dark.png" alt="Logo Manon Klein-Pol" style="width: 50px;" />
-            </a>
-            <p class="mb-0">&copy; 2024 Manon Klein-Pol</p>
-        </div>
-
-        <!-- Icônes sociales -->
-        <div class="d-flex gap-3">
-            <a target="_blank" href="https://github.com/Manon-KP" class="lien-icone">
-                <img src="images/github.png" alt="Logo GitHub" style="width: 50px;" />
-            </a>
-            <a target="_blank" href="https://www.linkedin.com/in/manon-klein-pol/" class="lien-icone">
-                <img src="images/linkedin.png" alt="Logo Linkedin" style="width: 50px;" />
-            </a>
+    <!-- Modal Projet 4 -->
+    <div class="modal fade" id="project4Modal" tabindex="-1" aria-labelledby="project4ModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="project4ModalLabel">Recherche de Chemin Optimal en Python</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/CaptureOpenStreetMap2024-recherche-chemin.PNG" alt="Chemin Optimal" class="mb-3"
+                        style="width:700px">
+                    <p><strong>Description :</strong> Une implémentation graphique permettant de trouver le chemin le
+                        plus court dans un réseau de points, basée sur des algorithmes d'optimisation.</p>
+                    <p><strong>Fonctionnalités principales :</strong></p>
+                    <ul>
+                        <li>Visualisation graphique des points et des connexions.</li>
+                        <li>Calcul du chemin le plus court en temps réel.</li>
+                        <li>Interface interactive permettant de tester différents scénarios.</li>
+                    </ul>
+                    <p><strong>Défis rencontrés :</strong></p>
+                    <ul>
+                        <li>Optimisation des calculs pour des grands réseaux de points.</li>
+                        <li>Intégration d’une interface intuitive utilisant la bibliothèque `graphics.py`.</li>
+                    </ul>
+                    <p><strong>Technologies utilisées :</strong> Python, bibliothèque Graphics.</p>
+                    <p><strong>Résultat :</strong> Un outil éducatif permettant de comprendre et de visualiser les
+                        algorithmes d'optimisation des graphes.</p>
+                </div>
+            </div>
         </div>
     </div>
-</footer>
+
+
+    <!-- Pied de page -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container d-flex justify-content-between align-items-center flex-wrap">
+            <!-- Logo et Copyright -->
+            <div class="d-flex align-items-center">
+                <a href="index.html" class="lien-icone me-2">
+                    <img src="images/logo_dark.png" alt="Logo Manon Klein-Pol" style="width: 50px;" />
+                </a>
+                <p class="mb-0">&copy; 2024 Manon Klein-Pol</p>
+            </div>
+
+            <!-- Icônes sociales -->
+            <div class="d-flex gap-3">
+                <a target="_blank" href="https://github.com/Manon-KP" class="lien-icone">
+                    <img src="images/github.png" alt="Logo GitHub" style="width: 50px;" />
+                </a>
+                <a target="_blank" href="https://www.linkedin.com/in/manon-klein-pol/" class="lien-icone">
+                    <img src="images/linkedin.png" alt="Logo Linkedin" style="width: 50px;" />
+                </a>
+                <a href="docs/CV" download class="lien-icone">
+                    <img src="images/download.png" alt="Télécharger CV" style="width: 50px;" />
+                </a>
+            </div>
+        </div>
+    </footer>
 
 
     <!-- Lien vers les scripts JavaScript de Bootstrap -->
@@ -262,4 +356,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
     <script src="JS/scripts.js"></script>
 </body>
+
 </html>
