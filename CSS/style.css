@@ -25,7 +25,7 @@ body {
 h2 {
     font-size: 2.5rem;
     font-weight: bold;
-    color: var(--primary-color); /* Couleur d'accentuation */
+    color: var(--primary-color);
     text-transform: uppercase;
     margin-bottom: 2rem;
 }
@@ -61,31 +61,17 @@ h2 {
     z-index: 2; /* Le texte reste au-dessus de l'image */
 }
 
-.hero .btn {
-    border-radius: 30px; /* Coins très arrondis */
-    padding: 12px 30px; /* Ajuste la taille du bouton */
-    font-size: 18px; /* Augmente la taille de la police */
-    background-color: #0071e3; /* Bleu doux, similaire à celui utilisé par Apple */
-    border: none; /* Enlève la bordure par défaut */
+.btn {
+    border-radius: 30px;
+    padding: 12px 30px; 
+    font-size: 18px; 
+    background-color: #0071e3;
+    border: none;
     transition: background-color 0.3s ease, transform 0.3s ease; /* Effet au survol */
 }
 
-.hero .btn:hover {
-    background-color: #005bb5; /* Couleur de survol (un bleu plus foncé) */
-    transform: scale(1.05); /* Légère augmentation de la taille au survol */
-}
-
-#competences .btn {
-    border-radius: 30px; /* Coins très arrondis */
-    padding: 12px 30px; /* Ajuste la taille du bouton */
-    font-size: 18px; /* Augmente la taille de la police */
-    background-color: #0071e3; /* Bleu doux, similaire à celui utilisé par Apple */
-    border: none; /* Enlève la bordure par défaut */
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Effet au survol */
-}
-
-#competences .btn:hover {
-    background-color: #005bb5; /* Couleur de survol (un bleu plus foncé) */
+.btn:hover {
+    background-color: #005bb5; 
     transform: scale(1.05); /* Légère augmentation de la taille au survol */
 }
 
@@ -102,10 +88,8 @@ h2 {
     margin: 0 auto; /* Centrer le contenu de la grille */
 }
 
-
-
 .a-propos-photo {
-    border-radius: 50%; /* Cercle parfait */
+    border-radius: 50%;
     transition: transform 0.3s ease;
 }
 
@@ -151,21 +135,21 @@ h2 {
     }
 
     .a-propos-text {
-        font-size: 0.85rem; /* Texte encore légèrement réduit sur mobile */
+        font-size: 0.85rem; 
     }
 }
 
 @media (min-width: 1200px) {
     #a-propos {
-        padding: 10vh 10vw; /* Espacement plus large sur écrans larges */
+        padding: 10vh 10vw;
     }
 
     .a-propos-photo {
-        width: 300px; /* Image plus grande sur grand écran */
+        width: 300px;
     }
 
     .a-propos-text {
-        font-size: 1.3rem; /* Texte légèrement agrandi pour les écrans larges */
+        font-size: 1.3rem;
     }
 }
 
@@ -222,21 +206,21 @@ h2 {
 
 
 header {
-    background-color: #212529; /* Gris foncé */
+    background-color: #212529; 
     position: fixed; /* Fixe le header en haut */
     top: 0;
     left: 0;
-    width: 100%; /* Prend toute la largeur de l'écran */
+    width: 100%;
     z-index: 1000; /* S'assure que le header est au-dessus des autres éléments */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optionnel : ajout d'une ombre sous le header */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 
 /* Global styles pour le header */
 nav {
     display: flex;
-    justify-content: space-between; /* Espace entre le logo et les liens */
-    align-items: center; /* Alignement vertical */
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo img {
@@ -251,7 +235,7 @@ nav {
 
 .nav-links {
     display: flex; /* Utilisation de flex pour afficher les liens horizontalement */
-    gap: 30px; /* Espacement entre les liens */
+    gap: 30px;
 }
 
 .nav-link {
@@ -263,7 +247,7 @@ nav {
 }
 
 .nav-link:hover {
-    color: #007bff; /* Changement de couleur au survol */
+    color: #007bff;
     border-bottom: 2px solid #007bff; /* Ligne sous le lien */
 }
 
@@ -287,7 +271,7 @@ nav {
 
 /*footer*/
 footer .social-icons img {
-    transition: transform 0.3s ease; /* Effet de zoom sur les icônes */
+    transition: transform 0.3s ease;
 }
 
 footer .social-icons img:hover {
@@ -295,18 +279,18 @@ footer .social-icons img:hover {
 }
 
 footer p {
-    font-size: 0.9rem; /* Taille légèrement réduite du texte */
+    font-size: 0.9rem; 
     margin: 0;
 }
 
 footer .container {
-    gap: 20px; /* Espacement entre les éléments flex */
+    gap: 20px;
 }
 
 /* Définir la taille uniforme des icônes sociales */
 footer .lien-icone img {
-    width: 40px;  /* La largeur de l'image (ajustez selon vos besoins) */
-    height: 40px; /* La hauteur de l'image (ajustez selon vos besoins) */
+    width: 40px;  
+    height: 40px;
     object-fit: contain;  /* Assure que l'image garde son ratio et ne soit pas déformée */
 }
 

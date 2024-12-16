@@ -70,7 +70,8 @@
     <!-- Section Mes compétences -->
     <section id="competences" class="bg-light py-5">
         <div class="container">
-            <h2 class="section-title text-center mb-5">Mes compétences</h2>
+            <h2 class="section-title text-center mb-5">Compétences</h2>
+            <h3 class="section-title text-center mb-4">Compétences techniquess</h3>
             <div class="row">
                 <!-- Développement Web -->
                 <div class="col-md-6 col-lg-3 mb-4">
@@ -109,7 +110,8 @@
                             <i class="fas fa-database fa-3x mb-3" style="color: #ff9800;"></i>
                             <h4 class="card-title">Base de données</h4>
                             <ul class="list-unstyled">
-                                <li><strong>PL/SQL, MySQL, phpMyAdmin, Oracle</strong> : Conception et gestion des bases de données.</li>
+                                <li><strong>PL/SQL, MySQL, phpMyAdmin, Oracle</strong> : Conception et gestion des bases
+                                    de données.</li>
                                 <li><strong>VBA Access</strong> : Automatisation des processus de données.</li>
                             </ul>
                         </div>
@@ -132,6 +134,45 @@
                 </div>
             </div>
 
+            <!-- Section Soft Skills -->
+            <h3 class="section-title text-center mb-4">Compétences relationnelles</h3>
+            <div class="row justify-content-center">
+                <!-- Travail en équipe -->
+                <div class="col-md-4 col-lg-3 mb-4">
+                    <div class="card shadow-sm border-0">
+                        <div class="card-body text-center">
+                            <i class="fas fa-users fa-3x mb-3" style="color: #4caf50;"></i>
+                            <h4 class="card-title">Travail en équipe</h4>
+                            <p>Capacité à collaborer efficacement avec des collègues dans un environnement de groupe.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gestion du temps -->
+                <div class="col-md-4 col-lg-3 mb-4">
+                    <div class="card shadow-sm border-0">
+                        <div class="card-body text-center">
+                            <i class="fas fa-clock fa-3x mb-3" style="color: #ff9800;"></i>
+                            <h4 class="card-title">Gestion du temps</h4>
+                            <p>Capacité à organiser, planifier et prioriser les tâches efficacement.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Résolution de problèmes -->
+                <div class="col-md-4 col-lg-3 mb-4">
+                    <div class="card shadow-sm border-0">
+                        <div class="card-body text-center">
+                            <i class="fas fa-lightbulb fa-3x mb-3" style="color: #9c27b0;"></i>
+                            <h4 class="card-title">Résolution de problèmes</h4>
+                            <p>Capacité à analyser des situations complexes et à proposer des solutions innovantes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
             <!-- Bouton Télécharger CV -->
             <div class="text-center mt-4">
                 <a href="docs/CV_Manon_Klein-Pol.pdf" class="btn btn-primary btn-lg" download="CV_Manon_Klein-Pol.pdf">
@@ -145,9 +186,9 @@
     <section id="projets" class="container-fluid py-5">
         <h2 class="section-title text-center">Mes Projets</h2>
         <div class="row">
-            <!-- Projet 1 -->
+            <!-- FitPulse -->
             <div class="col-md-4">
-                <div class="card project-card" data-bs-toggle="modal" data-bs-target="#project1Modal">
+                <div class="card project-card" data-bs-toggle="modal" data-bs-target="#fitpulse">
                     <img src="images/fitpulse.jpg" class="card-img-top" alt="FitPulse">
                     <div class="card-body">
                         <h5 class="card-title">FitPulse : Application Sport et Bien-être</h5>
@@ -156,9 +197,32 @@
                     </div>
                 </div>
             </div>
-            <!-- Projet 2 -->
+            <!-- Portfolio -->
             <div class="col-md-4">
-                <div class="card project-card" data-bs-toggle="modal" data-bs-target="#project2Modal">
+                <div class="card project-card" data-bs-toggle="modal" data-bs-target="#portfolioModal">
+                    <img src="images/portfolio.png" class="card-img-top" alt="Portfolio">
+                    <div class="card-body">
+                        <h5 class="card-title">Mon Portfolio : Développement Web et Logiciel</h5>
+                        <p class="card-text">Site web présentant mes projets et réalisations en développement web,
+                            mobile et logiciel.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- CD -->
+            <div class="col-md-4">
+                <div class="card project-card" data-bs-toggle="modal" data-bs-target="#cdcraze">
+                    <img src="images/cdcraze.jpg" class="card-img-top" alt="CDCraze">
+                    <div class="card-body">
+                        <h5 class="card-title">CDCraze : Boutique de CDs</h5>
+                        <p class="card-text">Site de vente en ligne de CDs avec panier et paiement sécurisé, destiné aux
+                            mélomanes.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reseau -->
+            <div class="col-md-4">
+                <div class="card project-card" data-bs-toggle="modal" data-bs-target="#reseau">
                     <img src="images/reseau.png" class="card-img-top" alt="Réseau Linux">
                     <div class="card-body">
                         <h5 class="card-title">Configuration Réseau Linux</h5>
@@ -167,9 +231,9 @@
                     </div>
                 </div>
             </div>
-            <!-- Projet 3 -->
+            <!-- SpellWar -->
             <div class="col-md-4">
-                <div class="card project-card" data-bs-toggle="modal" data-bs-target="#project3Modal">
+                <div class="card project-card" data-bs-toggle="modal" data-bs-target="#spellwar">
                     <img src="images/spellwar.png" class="card-img-top" alt="Spellwar">
                     <div class="card-body">
                         <h5 class="card-title">Spellwar : Jeu en C++</h5>
@@ -178,22 +242,24 @@
                     </div>
                 </div>
             </div>
-            <!-- Projet 4 -->
+            <!-- Chemin-->
             <div class="col-md-4">
-                <div class="card project-card" data-bs-toggle="modal" data-bs-target="#project4Modal">
+                <div class="card project-card" data-bs-toggle="modal" data-bs-target="#chemin">
                     <img src="images/bayonne.png" class="card-img-top" alt="Chemin Optimal">
                     <div class="card-body">
                         <h5 class="card-title">Recherche de Chemin Optimal en Python</h5>
-                        <p class="card-text">Implémentation graphique pour trouver le chemin le plus court dans un réseau de points basé sur le centre-ville de Bayonne.</p>
+                        <p class="card-text">Implémentation graphique pour trouver le chemin le plus court dans un
+                            réseau de points basé sur le centre-ville de Bayonne.</p>
                     </div>
                 </div>
             </div>
+
         </div>
     </section>
 
     <!-- Modales -->
-    <!-- Modal Projet 1 -->
-    <div class="modal fade" id="project1Modal" tabindex="-1" aria-labelledby="project1ModalLabel" aria-hidden="true">
+    <!-- FitPulse -->
+    <div class="modal fade" id="fitpulse" tabindex="-1" aria-labelledby="project1ModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -201,8 +267,9 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <img src="images/fitpulse.jpg" alt="FitPulse" class="mb-3" style="width:700px">
-                    <p><strong>Description :</strong> FitPulse est une application web responsive qui met en relation des coachs
+                    <img src="images/fitpulse.jpg" alt="FitPulse" class="mb-3">
+                    <p><strong>Description :</strong> FitPulse est une application web responsive qui met en relation
+                        des coachs
                         sportifs professionnels avec des utilisateurs souhaitant pratiquer une activité physique. Elle
                         offre des fonctionnalités de réservation de séances en visioconférence ou en présentiel,
                         adaptées aux besoins de chaque utilisateur.</p>
@@ -218,16 +285,102 @@
                         <li>Intégration de paiements en ligne sécurisés.</li>
                         <li>Optimisation pour les appareils mobiles et tablettes.</li>
                     </ul>
-                    <p><strong>Technologies utilisées :</strong> HTML, CSS, PHP, Frameworks (Bootstrap & Twig), JavaScript, phpMyAdmin.</p>
+                    <p><strong>Technologies utilisées :</strong> HTML, CSS, PHP, Frameworks (Bootstrap & Twig),
+                        JavaScript, phpMyAdmin.</p>
                     <p><strong>Résultat :</strong> Une application fonctionnelle et responsive, avec des coachs
                         qualifiés et un suivi des séances utilisateur.</p>
+                    <div class="text-center mt-4">
+                        <a href="https://github.com/loustaucazauxdavid/SAE_S3_FitPulse" class="btn btn-primary btn-lg"
+                            target="_blank">
+                            <i class="fas fa-download me-2"></i>Visiter le dépôt GitHub
+                        </a>
+                    </div>
+
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- Modal Projet 2 -->
-    <div class="modal fade" id="project2Modal" tabindex="-1" aria-labelledby="project2ModalLabel" aria-hidden="true">
+    <!-- Modal Portfolio -->
+    <div class="modal fade" id="portfolioModal" tabindex="-1" aria-labelledby="portfolioModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="portfolioModalLabel">Mon Portfolio</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/portfolio.png" alt="Portfolio" class="mb-3">
+                    <p><strong>Description :</strong> Mon portfolio présente une sélection de projets réalisés dans le
+                        cadre de mes études et de mon parcours professionnel. Vous y trouverez des applications web, des
+                        logiciels, ainsi que des projets en développement mobile.</p>
+                    <p><strong>Fonctionnalités principales :</strong></p>
+                    <ul>
+                        <li>Présentation de mes projets passés et en cours.</li>
+                        <li>Affichage des technologies utilisées dans chaque projet.</li>
+                        <li>Un design moderne et responsive pour une navigation facile.</li>
+                        <li>Accès direct à mes dépôts GitHub et aux projets en ligne.</li>
+                    </ul>
+                    <p><strong>Défis rencontrés :</strong></p>
+                    <ul>
+                        <li>Optimisation du site pour une navigation fluide sur toutes les plateformes.</li>
+                        <li>Intégration de contenus multimédias dans un design dynamique.</li>
+                    </ul>
+                    <p><strong>Technologies utilisées :</strong> HTML, CSS, JavaScript, PHP, Bootstrap, GitHub, et bien
+                        plus.</p>
+                    <p><strong>Résultat :</strong> Un portfolio interactif et responsive, montrant mes compétences
+                        techniques et mes projets réalisés avec soin.</p>
+                    <div class="text-center mt-4">
+                        <a href="https://github.com/tonnomdutilisateur" class="btn btn-primary btn-lg" target="_blank">
+                            <i class="fas fa-download me-2"></i>Visiter mon dépôt GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal CDCraze -->
+    <div class="modal fade" id="cdcraze" tabindex="-1" aria-labelledby="cdcrazeModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cdcrazeModalLabel">CDCraze</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/cdcraze.jpg" alt="CDCraze" class="mb-3">
+                    <p><strong>Description :</strong> CDCraze est un site e-commerce dédié à la vente de CDs. Il propose
+                        une expérience utilisateur fluide, permettant l'ajout au panier et un paiement simplifié. Le
+                        site inclut également un back-office pour la gestion des produits par les administrateurs
+                        connectés.</p>
+                    <p><strong>Fonctionnalités principales :</strong></p>
+                    <ul>
+                        <li>Ajout et gestion des CDs au panier.</li>
+                        <li>Système de paiement simplifié et sécurisé.</li>
+                        <li>Back-office pour l’ajout et la suppression de produits.</li>
+                        <li>Connexion obligatoire pour accéder au back-office.</li>
+                    </ul>
+                    <p><strong>Défis rencontrés :</strong></p>
+                    <ul>
+                        <li>Implémentation du panier et de la gestion des paiements.</li>
+                        <li>Sécurisation des accès au back-office.</li>
+                        <li>Optimisation pour une navigation fluide et intuitive.</li>
+                    </ul>
+                    <p><strong>Technologies utilisées :</strong> HTML, CSS, PHP, Frameworks (Bootstrap), JavaScript,
+                        phpMyAdmin.</p>
+                    <p><strong>Résultat :</strong> Un site e-commerce fonctionnel avec des fonctionnalités de gestion
+                        pour les administrateurs.</p>
+                    <div class="text-center mt-4">
+                        <a href="https://github.com/votreDepotGit/CDCraze" class="btn btn-primary btn-lg"
+                            target="_blank">
+                            <i class="fas fa-download me-2"></i>Visiter le dépôt GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Reseau -->
+    <div class="modal fade" id="reseau" tabindex="-1" aria-labelledby="project2ModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -235,7 +388,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <img src="images/reseau.png" alt="Réseau Linux" class="mb-3" style="width:700px">
+                    <img src="images/reseau.png" alt="Réseau Linux" class="mb-3">
                     <p><strong>Description :</strong> Ce projet consistait à configurer un réseau informatique sous
                         Linux en utilisant des services réseau comme DHCP et FTP pour gérer les connexions et l'échange
                         de fichiers.</p>
@@ -253,13 +406,19 @@
                     <p><strong>Technologies utilisées :</strong> Bash, Linux (Debian), DHCP, FTP.</p>
                     <p><strong>Résultat :</strong> Un réseau stable et fonctionnel capable de distribuer automatiquement
                         des adresses IP et d'offrir des services de transfert de fichiers.</p>
+                    <div class="text-center mt-4">
+                        <a href="docs/Manon_Klein-Pol_Reseau.zip" class="btn btn-primary btn-lg"
+                            download="Manon_Klein-Pol_Reseau.zip">
+                            <i class="fas fa-download me-2"></i>Télécharger le ZIP
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Modal Projet 3 -->
-    <div class="modal fade" id="project3Modal" tabindex="-1" aria-labelledby="project3ModalLabel" aria-hidden="true">
+    <!-- SpellWar -->
+    <div class="modal fade" id="spellwar" tabindex="-1" aria-labelledby="project3ModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -267,7 +426,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <img src="images/spellwar.png" alt="Spellwar" class="mb-3" style="width:700px">
+                    <img src="images/spellwar.png" alt="Spellwar" class="mb-3">
                     <p><strong>Description :</strong> Spellwar est un jeu d'arcade développé en C++ où le joueur incarne
                         un magicien luttant contre des créatures malveillantes dans une arène dynamique.</p>
                     <p><strong>Fonctionnalités principales :</strong></p>
@@ -281,16 +440,22 @@
                         <li>Optimisation des performances pour le traitement des déplacements.</li>
                         <li>Gestion des interactions entre les différents éléments du jeu.</li>
                     </ul>
-                    <p><strong>Technologies utilisées :</strong> C++, SDL.</p>
+                    <p><strong>Technologies utilisées :</strong> C++</p>
                     <p><strong>Résultat :</strong> Un jeu interactif et amusant qui met en avant les compétences en
                         programmation algorithmique et graphique.</p>
+                    <div class="text-center mt-4">
+                        <a href="docs/Manon_Klein-Pol_Spellwar.zip" class="btn btn-primary btn-lg"
+                            download="Manon_Klein-Pol_Spellwar.zip">
+                            <i class="fas fa-download me-2"></i>Télécharger le ZIP
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Modal Projet 4 -->
-    <div class="modal fade" id="project4Modal" tabindex="-1" aria-labelledby="project4ModalLabel" aria-hidden="true">
+    <!-- Chemin -->
+    <div class="modal fade" id="chemin" tabindex="-1" aria-labelledby="project4ModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -298,9 +463,10 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <img src="images/bayonne.png" alt="Chemin Optimal" class="mb-3" style="width:700px">
+                    <img src="images/bayonne.png" alt="Chemin Optimal" class="mb-3">
                     <p><strong>Description :</strong> Une implémentation graphique permettant de trouver le chemin le
-                        plus court dans un réseau de points, basée sur des algorithmes d'optimisation.</p>
+                        plus court dans un réseau de points dans le centre-ville de Bayonne, basée sur des algorithmes
+                        d'optimisation (Djikstra, A*, Bellman).</p>
                     <p><strong>Fonctionnalités principales :</strong></p>
                     <ul>
                         <li>Visualisation graphique des points et des connexions.</li>
@@ -315,6 +481,12 @@
                     <p><strong>Technologies utilisées :</strong> Python, bibliothèque Graphics.</p>
                     <p><strong>Résultat :</strong> Un outil éducatif permettant de comprendre et de visualiser les
                         algorithmes d'optimisation des graphes.</p>
+                    <div class="text-center mt-4">
+                        <a href="docs/Manon_Klein-Pol_Recherche_Chemin.zip" class="btn btn-primary btn-lg"
+                            download="Manon_Klein-Pol_Recherche_Chemin.zip">
+                            <i class="fas fa-download me-2"></i>Télécharger le ZIP
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
